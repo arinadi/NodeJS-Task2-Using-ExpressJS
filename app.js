@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 
 // app.use(bodyParser.urlencoded());
-
 app.use((req, res, next) => {
     console.log("always run");
     next(); //next process
